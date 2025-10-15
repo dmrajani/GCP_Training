@@ -15,12 +15,11 @@ resource "google_storage_bucket" "example" {
     enabled = true
   }
 
-  # Optional: Set bucket access control (uniform bucket-level access)
-  uniform_bucket_level_access = true
+  
 
   # Optional: Labels
   labels = {
-    environment = "production"
+    environment = "production1"
   }
 
   # Optional: Lifecycle rule to transition objects to a different storage class
