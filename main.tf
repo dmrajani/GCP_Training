@@ -5,8 +5,8 @@ provider "google" {
 }
 
 # Create a storage bucket
-resource "google_storage_bucket" "GCP_test_bucket1" {
-  name          = "GCP_test_bucket1" # Must be globally unique
+resource "google_storage_bucket" "example" {
+  name          = "gcp_testdm_bucket1" # Must be globally unique
   location      = "US"                  # Multi-region location; options: EU, ASIA, or specific regions like us-central1
   storage_class = "STANDARD"            # Options: STANDARD, NEARLINE, COLDLINE, ARCHIVE
 
