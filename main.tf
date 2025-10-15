@@ -1,6 +1,6 @@
 # Configure the Google Cloud provider
 provider "google" {
-  project = "your-project-id" # Replace with your GCP project ID
+  project = "ageless-runway-473613-f4" # Replace with your GCP project ID
   region  = "us-central1"    # Replace with your preferred region
 }
 
@@ -26,7 +26,7 @@ resource "google_storage_bucket" "example" {
   # Optional: Lifecycle rule to transition objects to a different storage class
   lifecycle_rule {
     condition {
-      age = 30 # Days
+      age = 3 # Days
     }
     action {
       type = "SetStorageClass"
